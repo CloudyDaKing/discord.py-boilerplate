@@ -7,7 +7,7 @@ class ping(commands.Cog):
         self.bot = bot
 
     #hybrid command for both slash and normal commands
-    @commands.hybrid_command(name='ping', description='Get the ping of spyro')
+    @commands.hybrid_command(name='ping', description='Get the ping of the bot')
     async def ping(self, ctx):
         #sends latency of bot
         await ctx.send(f"🏓 Pong! {round(self.bot.latency * 1000)}ms")
